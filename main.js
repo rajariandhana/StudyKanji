@@ -43,7 +43,7 @@ const randomized = Setup();
 document.querySelector(".card").addEventListener("click", Next);
 
 
-let hidden = true;
+let hidden = false;
 function Next()
 {
     if(hidden)
@@ -56,6 +56,7 @@ function Next()
     {
         right.style.display = 'flex';
         kanji.style.fontSize = '80px';
+        hidden = true;
     }
     if(ctr == randomized.length)
     {
