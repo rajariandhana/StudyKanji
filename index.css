@@ -1,0 +1,65 @@
+:root
+{
+    --myRed:#d74339;
+    --myBeige:#F0DBBE;
+}
+
+body
+{
+    color: var(--myRed);
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 1px; */
+}
+
+.card
+{
+    height: 200px;
+    max-width: 300px;
+    /* min-width: 300px; */
+    background-color: var(--myBeige);
+    border: 4px var(--myRed) solid;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.left
+{
+    /* width: 40%; */
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+.left #kanji
+{
+    font-size: 80px;
+}
+.left #english
+{
+    font-size: 30px;
+}
+
+.right
+{
+    /* width: 60%; */
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.examples
+{
+    border-collapse: collapse;
+    
+    /* margin: 20px; */
+}
