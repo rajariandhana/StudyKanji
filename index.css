@@ -10,31 +10,95 @@ body
     font-family: Arial, Helvetica, sans-serif;
     /* font-size: 1px; */
 }
+a
+{
+    text-decoration: none;
+}
+
+.navbar
+{
+    background-color: var(--myRed);
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+.navbar a
+{
+    color: var(--myBeige);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+
+.levels
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.level
+{
+    background-color: var(--myBeige);
+    color: var(--myRed);
+    font-weight: bold;
+    font-size: 30px;
+    height: 60px;
+    line-height: 60px;
+    max-width: 300px;
+    min-width: 300px;
+    border: 4px var(--myRed) solid;
+    border-radius: 10px;
+    text-align: center;
+}
+.container
+{
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.counter
+{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
 
 .card
 {
-    height: 200px;
-    max-width: 300px;
-    /* min-width: 300px; */
+    
     background-color: var(--myBeige);
     border: 4px var(--myRed) solid;
     border-radius: 30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    height: 250px;
+    width: 300px;
+    /* max-width: 300px; */
+    /* min-width: 300px; */
+    /* padding: 10px 30px; */
+    padding: 10px 0;
 }
 
 .left
 {
     /* width: 40%; */
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     flex-direction: column;
 
     align-items: center;
     justify-content: center;
+    
 }
 .left #kanji
 {
@@ -48,18 +112,38 @@ body
 .right
 {
     /* width: 60%; */
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
 }
 
 .examples
 {
-    border-collapse: collapse;
-    
+    border-collapse: separate;
+    /* border-spacing: 0; */
     /* margin: 20px; */
+}
+td
+{
+    padding-right: 10px;
+}
+td:last-child
+{
+    padding-right: none;
+}
+
+.nextLinks
+{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.nextLinks a
+{
+    color: var(--myRed);
+    font-weight: bold;
 }
