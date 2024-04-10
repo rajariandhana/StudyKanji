@@ -210,3 +210,4 @@ const library_n4 = [
     ['鳥','bird',[['白鳥', 'はくちょう', 'swan'],['小鳥','ことり','small bird'],['野鳥','やちょう','wild bird'],]],
     ['黒','black',[['黒字', 'こくじ', 'to be in the black'],['白黒','しろくろ','black and white'],['黒っぽい','くろっぽい','dark'],]],
     ];
+    
