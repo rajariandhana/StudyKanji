@@ -15,6 +15,16 @@ a
     text-decoration: none;
 }
 
+.p100,.p200,.p300,.p400
+{
+    height: 20px;
+    background-color: blue;
+}
+.p100{width: 100px;}
+.p200{width: 200px;}
+.p300{width: 300px;}
+.p400{width: 400px;}
+
 .navbar
 {
     background-color: var(--myRed);
@@ -81,8 +91,8 @@ a
     align-items: center;
     justify-content: center;
     gap: 20px;
-    height: 250px;
-    width: 300px;
+    /* height: 250px; */
+    width: 350px;
     /* max-width: 300px; */
     /* min-width: 300px; */
     /* padding: 10px 30px; */
@@ -102,7 +112,7 @@ a
 }
 .left #kanji
 {
-    font-size: 80px;
+    font-size: 100px;
 }
 .left #english
 {
@@ -117,7 +127,7 @@ a
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
 }
 
