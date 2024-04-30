@@ -1,43 +1,44 @@
+@import url(https://db.onlinewebfonts.com/c/14936bb7a4b6575fd2eee80a3ab52cc2?family=Feather+Bold);
+@import url(https://db.onlinewebfonts.com/c/f83531ae85a3fcd9345c4267e28833ee?family=DIN+Next+Rounded+LT+Pro+Medium);
 :root
 {
     --myRed:#d74339;
-    --myBeige:#F0DBBE;
+    --myGrey:#e5e5e5;
+    --myBeige1:#F0DBBE;
+    --myBeige:#F2EEE3;
 }
 
 body
 {
-    color: var(--myRed);
+    background-color: var(--myBeige);
+    /* background-color: white; */
+    color: black;
+    color: var(--myRed); 
     font-family: Arial, Helvetica, sans-serif;
-    /* font-size: 1px; */
+    font-family: "DIN Next Rounded LT Pro Medium";
 }
 a
 {
     text-decoration: none;
 }
 
-.p100,.p200,.p300,.p400
-{
-    height: 20px;
-    background-color: blue;
-}
-.p100{width: 100px;}
-.p200{width: 200px;}
-.p300{width: 300px;}
-.p400{width: 400px;}
-
 .navbar
 {
     background-color: var(--myRed);
+
     display: flex;
     flex-direction: row;
-    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+
+    /* height: 5em; */
+    /* width: 100%; */
 }
 .navbar a
 {
     color: var(--myBeige);
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px;
+    font-size: 2em;
+    font-family: "Feather Bold";
 }
 
 
@@ -64,58 +65,66 @@ a
     border: 4px var(--myRed) solid;
     border-radius: 10px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .container
 {
     /* background-color: aqua; */
+    margin-top: 1em;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.counter
+#counter
 {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.card
-{
-    
-    background-color: var(--myBeige);
-    border: 4px var(--myRed) solid;
-    border-radius: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 20px;
-    /* height: 250px; */
-    width: 350px;
-    /* max-width: 300px; */
-    /* min-width: 300px; */
-    /* padding: 10px 30px; */
-    padding: 10px 0;
+    /* margin-bottom: 20px; */
+}
+#counternumber
+{
+    color: var(--myRed);
+    font-size: 20px;
+    text-align: center;
+}
+#counterline
+{
+    background-color: var(--myRed);
+    width: 100px;
+    height: 3px;
+}
+
+.kanjicard
+{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .left
 {
-    /* width: 40%; */
     /* background-color: blue; */
     display: flex;
     flex-direction: column;
-
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     
 }
-.left #kanji
+#kanji
 {
     font-size: 100px;
 }
-.left #english
+#english
 {
+    margin-top: -.5em;
+    margin-bottom: .5em;
     font-size: 30px;
 }
 
@@ -131,19 +140,12 @@ a
     font-weight: bold;
 }
 
-.examples
+.examples_table tr, .examples_table td
 {
-    border-collapse: separate;
-    /* border-spacing: 0; */
-    /* margin: 20px; */
-}
-td
-{
-    padding-right: 10px;
-}
-td:last-child
-{
-    padding-right: none;
+    background-color: var(--myBeige);
+    color: var(--myRed);
+    border-bottom-color: var(--myRed);
+    font-size: 1em;
 }
 
 .nextLinks
@@ -156,4 +158,14 @@ td:last-child
 {
     color: var(--myRed);
     font-weight: bold;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited
+{
+    background-color: var(--myRed); /* Change to your desired color */
+    border-color: var(--myRed); /* Change to your desired color */
+}
+.mainbtn_div
+{
+    padding: 1em 1em;
 }
