@@ -64,12 +64,16 @@ function Setup()
     counter.style.visibility = 'hidden';
     // mainbtn = document.querySelector('mainbtn');
     mainbtn = document.getElementById('mainbtn');
+    mainbtn.addEventListener("click",Action);
+    document.addEventListener("keydown", function(event){
+        if(event.keyCode === 32) Action();
+    });
     return randomized;
 }
 
 const randomized = Setup();
 // document.querySelector(".kanjicard").addEventListener("click", Action);
-document.querySelector("mainbtn").addEventListener("click", Action);
+// document.getElementById("mainbtn").addEventListener("click", Action);
 
 
 let hidden = false;
@@ -87,7 +91,6 @@ function Action()
 
     if(ctr == 0)
     {
-        // right.style.display = 'flex';
         // examples_table.style.visibility = 'visible'
         kanji.style.fontSize = '100px';
         counter.style.visibility = 'visible';
@@ -99,13 +102,12 @@ function Action()
     }
     else if(ctr == randomized.length)
     {
-        // right.style.display = 'none';
         kanji.textContent = 'おめでとう';
-        // kanji.textContent = 'under construction';
         kanji.style.fontSize = '40px';
         english.textContent = 'congrats';
-        // english.textContent = 'sisanya otw';
-        card.style.justifyContent = 'center';
+        examples_table.style.visibility = 'hidden';
+
+        mainbtn.textContent = 'HOME';
 
         const nextLinks = document.createElement('div');
         nextLinks.className = 'nextLinks';

@@ -145,7 +145,12 @@ a
     background-color: var(--myBeige);
     color: var(--myRed);
     border-bottom-color: var(--myRed);
-    font-size: 1em;
+    font-size: 1.2em;
+}
+.examples_table td:nth-child(1), .examples_table td:nth-child(2)
+{
+    white-space: nowrap;
+    vertical-align: middle;
 }
 
 .nextLinks
